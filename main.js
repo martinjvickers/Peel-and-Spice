@@ -20,7 +20,7 @@ var sceneSplash = {
   preload: preloadSplash,
   create: createSplash,
   files: [
-    { type: 'image', key: 'splashbg', url: 'assets/splashscreen.png'}
+    { type: 'image', key: 'splashbg', url: 'peel_and_spice_assets/splashscreen.png'}
   ]
 };
 
@@ -51,8 +51,8 @@ function preloadGame ()
 {
   this.load.image('sky', 'assets/background.jpg');
   this.load.image('ground','assets/platform.png');
-  this.load.image('star','assets/bottle_sm.png');
-  this.load.image('bomb','assets/sugarcube.png');
+  this.load.image('star','peel_and_spice_assets/bottle_sm.png');
+  this.load.image('bomb','peel_and_spice_assets/sugarcube.png');
   this.load.spritesheet('dude', 'assets/person.png', {frameWidth: 64, frameHeight: 96});
 }
 
@@ -119,7 +119,7 @@ function createGame ()
 
 function preloadSplash ()
 {
-  this.load.image('splashbg','assets/splashscreen.png');
+  this.load.image('splashbg','peel_and_spice_assets/splashscreen.png');
 }
 
 function createSplash ()
@@ -134,7 +134,7 @@ function createSplash ()
 
 function preloadGameOver ()
 {
-  this.load.image('gameoverbg','assets/gameover.jpg');
+  this.load.image('gameoverbg','peel_and_spice_assets/gameover.jpg');
 }
 
 function createGameOver ()
